@@ -1,3 +1,7 @@
+const fs = require('fs');
+const path = require('path');
+const Client = require('ftp');
+
 function sendFiles(allFiles, destinationHost, projectName, projectVersion='default') {
 	const client = new Client();
 
