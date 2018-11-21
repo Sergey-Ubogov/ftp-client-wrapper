@@ -51,4 +51,4 @@ function getAllFilesWithExtInFolder(folder, extension) {
 	return allSourcemaps;
 }
 
-module.exports = [sendFiles, getAllFilesWithExtInFolder];
+module.exports = {sendFiles, getAllFilesWithExtInFolder};
