@@ -1,4 +1,4 @@
-function sendFiles(allFiles, projectName, projectVersion='default') {
+function sendFiles(allFiles, destinationHost, projectName, projectVersion='default') {
 	const client = new Client();
 
 	client.on('ready', async () => {
