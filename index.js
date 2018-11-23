@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const Client = require('ftp');
 
-function sendFiles(allFiles, destinationHost, projectName, projectVersion='default') {
+function sendFiles(allFiles, destinationHost, projectName, projectVersion='default', ftpClientOptions) {
 	const client = new Client();
 
 	client.on('ready', async () => {
@@ -26,6 +26,7 @@ function sendFiles(allFiles, destinationHost, projectName, projectVersion='defau
 	});
 
 	clientOptions = {
+		...ftpClientOptions,
 		host: destinationHost
 	};
 

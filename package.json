@@ -1,6 +1,6 @@
 {
   "name": "ftp-client-wrapper",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "send files by ftp protocol",
   "main": "index.js",
   "scripts": {
