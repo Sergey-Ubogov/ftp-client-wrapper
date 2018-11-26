@@ -25,6 +25,11 @@ function sendFiles(allFiles, destinationHost, projectName, projectVersion='defau
 		client.end();
 	});
 
+	client.on('error', err => {
+		console.info(err);
+		process.exit(1);
+	});
+
 	clientOptions = {
 		...ftpClientOptions,
 		host: destinationHost
